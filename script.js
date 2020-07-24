@@ -15,8 +15,9 @@ var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", function () {
   //clear array of characters in memory
   arrayOfCharacters = []
-
-  passwordLength = prompt("How many characters long do you want your password to be? (8-128)");
+  
+  //use floor to make decimal numbers whole
+  passwordLength = Math.floor(prompt("How many characters long do you want your password to be? (8-128)"));
 
   //stops function if user selects cancel on prompt
   if (passwordLength === null) {
