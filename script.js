@@ -23,10 +23,11 @@ generateBtn.addEventListener("click", function () {
     alert("You did not supply a length. Please try again.");
     return;
   }
-  
+
   //restrict password length to min and max
-  while (passwordLength < 8 || passwordLength > 128) {
-    passwordLength = prompt("Please enter a whole number no less than 8 and no greater than 128.");
+  else if (passwordLength < 8 || passwordLength > 128) {
+    alert("You did not supply a length of at least 8 and no more than 128. Please try again.");
+    return;
   }
 
   //confirm which characters sets user wants
