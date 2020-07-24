@@ -1,9 +1,8 @@
-//
+//characters available to build password
 const lowerAlphabet = "abcdefghijklmnopqrstuvwxyz";
 const upperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const numbers = "123456789";
 const specialChar = "!#$%&()*+,-./:;<=>?@[]^_{|}~";
-//empty array that will be built if user confirms they want to use a string of characters
 
 //Initialize global variables to access in other functions
 var arrayOfCharacters;
