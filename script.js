@@ -14,7 +14,7 @@ var generateBtn = document.querySelector("#generate");
 
 generateBtn.addEventListener("click", function () {
   //clear array of characters in memory
-  arrayOfCharacters = []
+  arrayOfCharacters = [];
   
   //use floor to make decimal numbers whole
   passwordLength = Math.floor(prompt("How many characters long do you want your password to be? (8-128)"));
@@ -74,7 +74,7 @@ function generatePassword(callback) {
 
     password += arrayOfCharacters[randomString][randomIndex];
 
-    i++
+    i++;
   };
   callback(password);
 };
